@@ -1,0 +1,14 @@
+{
+  "name": "ivltestsuite_sn",
+  "version": "1.0.0",
+  "description": "selenium-browserstack automated test scripts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "sam crouch",
+  "license": "ISC",
+  "dependencies": {
+    "browserstack-webdriver": "^2.41.1"
+  }
+}
