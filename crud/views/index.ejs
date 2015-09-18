@@ -1,0 +1,19 @@
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.1/jquery.min.js"></script>
+<script type="text/javascript" src="/javascripts/client.js"></script>
+<h1><%= title %></h1>
+<form method="POST" action="/tweet" id="tweetForm">
+	<textarea name="text"></textarea>
+	<input type="submit" value="Post" />
+</form>
+
+<ul class="tweetList">
+<% items.forEach(function(item) { %>
+	<li>
+		<div class="text"><%= item.text %></div> 
+		<span class="date"><%= item.created %></span>
+		<span class="edit"><a href="javascript: voie(0);">update</a></span>
+		<span class="postDelete"><a href="javascript: voie(0);">delete</a></span>
+		<input type="hidden" name="_id" value="<%= item.id %>" />
+	</li>
+<% }) %>
+</ul>

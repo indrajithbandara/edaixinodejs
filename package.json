@@ -1,14 +1,30 @@
 {
-  "name": "ivltestsuite_sn",
-  "version": "1.0.0",
-  "description": "selenium-browserstack automated test scripts",
+  "name": "monaco",
+  "version": "0.1.1",
+  "description": "NodeJS wrapper for Selenium+Webdriver. Work in progress.",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "directories": {
+    "example": "examples",
+    "test": "test"
   },
-  "author": "sam crouch",
-  "license": "ISC",
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter nyan"
+  },
+  "keywords": [
+    "test",
+    "selenium",
+    "webdriver",
+    "browser"
+  ],
+  "author": "Martin Hanzel",
+  "license": "MIT",
   "dependencies": {
-    "browserstack-webdriver": "^2.41.1"
+    "request": "~2.39.0",
+    "chainit": "~2.1.0",
+    "async": "~0.9.0"
+  },
+  "devDependencies": {
+    "chai": "~1.9.1",
+    "mocha": "~1.21.3"
   }
 }
