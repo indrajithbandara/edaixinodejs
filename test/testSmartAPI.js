@@ -1,4 +1,5 @@
 Selenium = require("../index");
+hello luke
 se = {};
 
 describe("SeleniumJS", function() {
